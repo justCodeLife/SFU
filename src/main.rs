@@ -1,3 +1,5 @@
+mod sfu;
+
 use tonic::{Request, Response, Status, transport::Server};
 
 use bookstore::{GetBookRequest, GetBookResponse};
