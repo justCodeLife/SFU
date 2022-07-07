@@ -1,0 +1,24 @@
+[package]
+name = "test-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tonic = "0.7.2"
+tokio = { version = "1.19.2", features = ["macros", "rt-multi-thread"] }
+prost = "0.10.4"
+tonic-web = "0.3.0"
+
+[build-dependencies]
+tonic-build = "0.7.2"
+
+[profile.dev]
+incremental = true
+
+[profile.release]
+strip = true
+lto = true
+opt-level = "z"
+codegen-units = 1
+incremental = true
+#debug = true
