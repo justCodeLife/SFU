@@ -2,10 +2,6 @@ fn main() {
 //     print::run();
 //     // println!("ssss");
 //
-//     println!("{name} = kossher", name = "kosssherssss");
-//
-//     let kossher = "s";
-//
 //     println!("max i32 is {}", i32::MAX);
 //
 //     // Primitive str = Immutable fixed-length string somewhere in memory
